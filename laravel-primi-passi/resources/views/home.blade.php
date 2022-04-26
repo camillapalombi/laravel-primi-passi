@@ -7,8 +7,13 @@
     <title>Homepage</title>
 </head>
 <body>
+
     <h1>
-        Hello World!!!!!!!!!
+        Welcome {{ $user_name }}!
     </h1>
+    <h3>
+        I hope that in {{ $birth_city }} today it will be good weather..
+    </h3>
+
 </body>
 </html>
