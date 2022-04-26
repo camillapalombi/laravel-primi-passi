@@ -7,13 +7,31 @@
     <title>Homepage</title>
 </head>
 <body>
+    <header>
+        
+        <h1>
+            Benvenuta {{ $user_name }}!
+        </h1>
+        <h3>
+            Spero che a {{ $birth_city }} oggi sia bel tempo..
+        </h3>
 
-    <h1>
-        Welcome {{ $user_name }}!
-    </h1>
-    <h3>
-        I hope that in {{ $birth_city }} today it will be good weather..
-    </h3>
+        <ul>
+
+            <li>
+                <a href="{{ route('aboutUs-route') }}"> RIGUARDO A NOI </a>
+            </li>
+
+            <li>
+                <a href="{{ route('workWithUs-route') }}"> LAVORA CON NOI </a>
+            </li>
+
+            <li>
+                <a href="{{ route('contacts-route') }}"> CONTATTI </a>
+            </li>
+
+        </ul>
+    </header>
 
 </body>
 </html>

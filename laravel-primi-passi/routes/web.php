@@ -13,13 +13,35 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+/*HOME PAGE: */
 Route::get('/', function () {
     $data = [
         'user_name' => 'Alice',
         'user_surname' => 'Pecci',
         'user_age' => 25,
-        'birth_city' => 'Milan' 
+        'birth_city' => 'Milano' 
     ];
-    
+
     return view('home', $data);
-});
+})->name('homepage-route');
+
+
+/*ABOUT US: */
+Route::get('/aboutUs', function () {
+    
+    return view('aboutUs');
+})->name('aboutUs-route');
+
+
+/* WORK WITH US: */
+Route::get('/workWithUs', function () {
+    
+    return view('workWithUs');
+})->name('workWithUs-route');
+
+
+/* CONTACTS: */
+Route::get('/contacts', function () {
+    
+    return view('contacts');
+})->name('contacts-route');
